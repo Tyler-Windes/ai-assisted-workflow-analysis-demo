@@ -1,2 +1,13 @@
-# Auto detect text files and perform LF normalization
+# Normalize text files in this repository.
 * text=auto
+
+# Project text files.
+*.md text eol=lf
+*.txt text eol=lf
+*.py text eol=lf
+*.sql text eol=lf
+*.json text eol=lf
+*.csv text eol=lf
+
+# Standard no-extension project text files.
+LICENSE text eol=lf
