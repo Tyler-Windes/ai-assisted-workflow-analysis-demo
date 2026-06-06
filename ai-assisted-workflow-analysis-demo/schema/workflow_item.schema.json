@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Workflow Item",
+  "type": "object",
+  "required": [
+    "item_id",
+    "source",
+    "submitted_date",
+    "request_type",
+    "description",
+    "reported_priority",
+    "status",
+    "customer_impact",
+    "system_area",
+    "missing_info_flag"
+  ],
+  "properties": {
+    "item_id": {
+      "type": "string",
+      "pattern": "^WF-[0-9]{3}$"
+    },
+    "source": {
+      "type": "string",
+      "enum": [
+        "email",
+        "form",
+        "chat",
+        "api"
+      ]
+    },
+    "submitted_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "request_type": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 5
+    },
+    "reported_priority": {
+      "type": "string"
+    },
+    "normalized_priority": {
+      "type": "string",
+      "enum": [
+        "High",
+        "Medium",
+        "Low",
+        "Needs Review"
+      ]
+    },
+    "assigned_team": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Open",
+        "In Progress",
+        "Closed",
+        "Needs Review"
+      ]
+    },
+    "resolution_notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "customer_impact": {
+      "type": "string",
+      "enum": [
+        "High",
+        "Medium",
+        "Low"
+      ]
+    },
+    "system_area": {
+      "type": "string"
+    },
+    "duplicate_of": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "missing_info_flag": {
+      "type": "boolean"
+    },
+    "validation_issues": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

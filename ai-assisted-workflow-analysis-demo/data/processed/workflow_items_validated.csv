@@ -1,0 +1,31 @@
+item_id,source,submitted_date,request_type,description,reported_priority,normalized_priority,assigned_team,status,resolution_notes,customer_impact,system_area,duplicate_of,missing_info_flag,validation_issues
+WF-001,email,2026-05-01,Access Issue,User cannot access reporting folder,High,High,Support,In Progress,,Medium,Reporting,,false,
+WF-002,form,2026-05-01,Data Quality Issue,Duplicate customer records appearing in weekly export,urgent,High,Data,Open,,High,CRM,,false,
+WF-003,chat,2026-05-02,Reporting Request,Need revised dashboard filter for regional summary,med,Medium,Analytics,Open,,Medium,Reporting,,false,
+WF-004,api,2026-05-02,System Error,Automated import failed overnight,P1,High,Engineering,In Progress,,High,Integration,,false,
+WF-005,email,2026-05-03,Process Exception,Approval step skipped for one submitted request,Medium,Medium,,Open,,Medium,Workflow,,true,Record marked as missing information
+WF-006,form,2026-05-04,Data Quality Issue,Customer impact field missing from several records,low,Low,Data,Open,,Low,CRM,,true,Record marked as missing information
+WF-007,chat,2026-05-04,Access Issue,Password reset completed,Low,Low,Support,Closed,,Low,Identity,,false,Closed record missing resolution notes
+WF-008,email,2026-05-05,System Error,Duplicate of overnight import failure,High,High,Engineering,Open,,High,Integration,WF-004,false,
+WF-009,form,2026-05-06,Reporting Request,Request for weekly aging report by assigned team,medium,Medium,Analytics,In Progress,,Medium,Reporting,,false,
+WF-010,email,2026-05-06,Process Exception,Record moved to closed before process review,P2,Medium,Operations,Closed,Process owner confirmed closure after review,Medium,Workflow,,false,
+WF-011,chat,2026-05-07,Other,Need help with this thing,ASAP,High,,Open,,Medium,Needs Review,,true,Record marked as missing information
+WF-012,api,2026-05-07,System Error,API returned timeout during nightly sync,P1,High,Engineering,In Progress,,High,Integration,,false,
+WF-013,email,2026-05-08,Data Quality Issue,Several records contain inconsistent system area labels,High,High,Data,Open,,Medium,Data Quality,,false,
+WF-014,form,2026-05-08,Access Issue,New analyst needs dashboard access,Medium,Medium,Support,Closed,Access granted after manager approval,Low,Reporting,,false,
+WF-015,chat,2026-05-09,Reporting Request,Need KPI summary by source channel,med,Medium,Analytics,Open,,Medium,Reporting,,false,
+WF-016,email,2026-05-09,Process Exception,Escalation path unclear for duplicate requests,High,High,Operations,In Progress,,High,Workflow,,false,
+WF-017,form,2026-05-10,Data Quality Issue,Closed records missing resolution notes,P2,Medium,Data,Open,,High,Workflow,,false,
+WF-018,api,2026-05-10,System Error,Webhook event generated incomplete payload,urgent,High,Engineering,Open,,High,Integration,,true,Record marked as missing information
+WF-019,email,2026-05-11,Access Issue,User reports intermittent authentication issue,Medium,Medium,,In Progress,,Medium,Identity,,true,In-progress record missing assigned team; Record marked as missing information
+WF-020,chat,2026-05-11,Reporting Request,Need export filtered by unresolved high impact items,Low,Low,Analytics,Closed,Report delivered to requester,Low,Reporting,,false,
+WF-021,form,2026-05-12,Process Exception,Manual approval needed for exception queue item,P3,Low,Operations,Open,,Low,Workflow,,false,
+WF-022,email,2026-05-12,Data Quality Issue,Duplicate of missing customer impact field issue,Medium,Medium,Data,Open,,Low,CRM,WF-006,false,
+WF-023,api,2026-05-13,System Error,Scheduled job completed with warning status,Medium,Medium,Engineering,Closed,,Medium,Integration,,false,Closed record missing resolution notes
+WF-024,chat,2026-05-13,Other,Please review the attached notes,unknown,Needs Review,,Open,,Low,Needs Review,,true,Record marked as missing information
+WF-025,email,2026-05-14,Access Issue,Role mismatch prevents user from editing report,High,High,Support,In Progress,,Medium,Reporting,,false,
+WF-026,form,2026-05-14,Reporting Request,Add closure documentation completeness metric,Medium,Medium,Analytics,Open,,Medium,Reporting,,false,
+WF-027,email,2026-05-15,Data Quality Issue,Priority field contains multiple nonstandard labels,P1,High,Data,In Progress,,High,Data Quality,,false,
+WF-028,api,2026-05-15,System Error,Integration retry generated duplicate item,High,High,Engineering,Open,,Medium,Integration,WF-012,false,
+WF-029,chat,2026-05-16,Process Exception,Request skipped normal triage queue,urgent,High,,Open,,High,Workflow,,true,Record marked as missing information
+WF-030,form,2026-05-16,Reporting Request,Need monthly summary for workflow exception trends,Low,Low,Analytics,Closed,Monthly summary created,Low,Reporting,,false,
