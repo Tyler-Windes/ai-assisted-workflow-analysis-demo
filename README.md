@@ -80,5 +80,3 @@ Prompt examples are limited to classification, extraction, and validation-review
 ##### Project Status
 
 This repository uses fictional data to show a practical analysis workflow. It is not a production system.
-
-

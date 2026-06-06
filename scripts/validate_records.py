@@ -172,7 +172,7 @@ def write_report(rows: list[dict[str, str]]) -> None:
     else:
         lines.append("- No record-level findings identified")
 
-    REPORT_PATH.write_bytes(("\r\n".join(lines).rstrip() + "\r\n").encode("utf-8"))
+    REPORT_PATH.write_bytes(("\n".join(lines).rstrip() + "\n").encode("utf-8"))
 
 
 def main() -> None:
@@ -202,7 +202,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
-
-
-
